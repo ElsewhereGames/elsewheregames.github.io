@@ -42,8 +42,28 @@ html, body {
 
 .menu {
 
+    /* Spacing */
+    padding:            10px 0px;
+
     /* Background */
     background-color:   #BCBCBC;
     text-align:         right;
+
+}
+
+.menu a {
+
+    /* Spacing */
+    margin-left:        10px;
+    
+    /* Background */
+    text-decoration:    none;   
+    
+    /* Text */
+    font-family:        'Fjalla One';
+    font-size:          30px;
+    color:              #424242;
+    letter-spacing:     2px;
+    transform:          uppercase;
     
 }
