@@ -5,10 +5,10 @@ html, body {
     margin:             0px;
     
     /* Background */
-    background-color:   #bcbcbc;    
+    background-color:   #BCBCBC;    
     
     /* Text */
-    font-family:        'Lekton';
+    font-family:        'Average Sans';
     
 }
 
@@ -21,7 +21,7 @@ html, body {
     margin:             0px auto;
     
     /* Background */
-    background-color:   #e9e9e9;
+    background-color:   #E9E9E9;
 }
 
 .header {
@@ -29,9 +29,9 @@ html, body {
     /* Size & Location */
     
     /* Text */
-    font-family:        'Molengo';
+    font-family:        'Fjalla One';
     font-size:          80px;
-    color:              #bcbcbc;
+    color:              #BCBCBC;
     letter-spacing:     2px;   
     
 }
@@ -43,6 +43,7 @@ html, body {
 .menu {
 
     /* Background */
-    background-color:   #bcbcbc;
+    background-color:   #BCBCBC;
+    text-align:         right;
     
 }
