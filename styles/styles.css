@@ -5,14 +5,15 @@ html, body {
     margin:             0px;
     
     /* Background */
-    background-color:   #BCBCBC;    
+    background-color:   #bcbcbc;    
     
     /* Text */
     font-family:        'Average Sans';
+    color:              #424242;
     
 }
 
-.content {
+.body {
     
     /* Size & Location */
     width:              640px;
@@ -21,37 +22,37 @@ html, body {
     margin:             0px auto;
     
     /* Background */
-    background-color:   #E9E9E9;
+    background-color:   #e9e9e9;
 }
 
-.header {
+/* Header */
+
+.body .header {
     
     /* Size & Location */
     
     /* Text */
     font-family:        'Fjalla One';
     font-size:          80px;
-    color:              #BCBCBC;
+    color:              #bcbcbc;
     letter-spacing:     2px;   
     
 }
 
-.header img {
-    border:             0px;
-}
+/* Menu */
 
-.menu {
+.body .menu {
 
     /* Spacing */
     padding:            10px 0px;
 
     /* Background */
-    background-color:   #BCBCBC;
+    background-color:   #bcbcbc;
     text-align:         right;
 
 }
 
-.menu a {
+.body .menu a {
 
     /* Spacing */
     margin-left:        10px;
@@ -66,4 +67,10 @@ html, body {
     letter-spacing:     2px;
     transform:          uppercase;
     
+}
+
+/* Content */
+
+.content {
+    padding:            10px;
 }
