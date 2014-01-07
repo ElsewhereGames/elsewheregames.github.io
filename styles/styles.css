@@ -1,0 +1,48 @@
+html, body {
+
+    /* Size & Location */
+    height:             100%;
+    margin:             0px;
+    
+    /* Background */
+    background-color:   #bcbcbc;    
+    
+    /* Text */
+    font-family:        'Lekton';
+    
+}
+
+.content {
+    
+    /* Size & Location */
+    width:              640px;
+    height:             auto !important;
+    min-height:         100%;
+    margin:             0px auto;
+    
+    /* Background */
+    background-color:   #e9e9e9;
+}
+
+.header {
+    
+    /* Size & Location */
+    
+    /* Text */
+    font-family:        'Molengo';
+    font-size:          80px;
+    color:              #bcbcbc;
+    letter-spacing:     2px;   
+    
+}
+
+.header img {
+    border:             0px;
+}
+
+.menu {
+
+    /* Background */
+    background-color:   #bcbcbc;
+    
+}
