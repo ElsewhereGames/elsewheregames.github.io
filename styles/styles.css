@@ -1,0 +1,49 @@
+html, body {
+
+    /* Size & Location */
+    height:             100%;
+    margin:             0px;
+    
+    /* Background */
+    background-color:   #BCBCBC;    
+    
+    /* Text */
+    font-family:        'Average Sans';
+    
+}
+
+.content {
+    
+    /* Size & Location */
+    width:              640px;
+    height:             auto !important;
+    min-height:         100%;
+    margin:             0px auto;
+    
+    /* Background */
+    background-color:   #E9E9E9;
+}
+
+.header {
+    
+    /* Size & Location */
+    
+    /* Text */
+    font-family:        'Fjalla One';
+    font-size:          80px;
+    color:              #BCBCBC;
+    letter-spacing:     2px;   
+    
+}
+
+.header img {
+    border:             0px;
+}
+
+.menu {
+
+    /* Background */
+    background-color:   #BCBCBC;
+    text-align:         right;
+    
+}
