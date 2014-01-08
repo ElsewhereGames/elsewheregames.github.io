@@ -71,6 +71,22 @@ html, body {
 
 /* Content */
 
-.content {
-    padding:            10px;
+.body .content {
+    padding:            30px;
+}
+
+.body .content p {
+    
+    /* Text */
+    font-size:          110%;
+    text-align:         justify;
+    line-height:        170%;
+    
+}
+
+.body .content h1 {
+
+    /* Text */
+    color:              #3299bb;
+
 }
