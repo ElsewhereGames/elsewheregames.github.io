@@ -1,3 +1,10 @@
+/*
+ * The main colors used in this style come a color scheme called "Gamebookers" by user "plamenj":
+ *
+ * http://www.colourlovers.com/palette/148712/Gamebookers
+ *
+ */
+
 html, body {
 
     /* Size & Location */
@@ -66,6 +73,13 @@ html, body {
     color:              #424242;
     letter-spacing:     2px;
     transform:          uppercase;
+    
+}
+
+.body .menu a:hover {
+    
+    /* Text */
+    color:              #3299bb;
     
 }
 
