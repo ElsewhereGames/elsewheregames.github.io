@@ -120,3 +120,33 @@ html, body {
     text-decoration:    none;
 
 }
+
+/* Post Lists */
+
+.body .posts  ul {
+    list-style-type:    none;
+    padding:            0px;
+}
+
+.body .posts ul li {
+    margin:             10px 0px;
+    padding:            10px 5px;
+    background-color:   #bcbcbc;
+}
+
+.body .posts ul li a {
+    display:            block;
+    /* Text */
+    font-size:          25px;
+    font-family:        'Fjalla One';
+    color:              #424242;
+    font-weight:        normal;
+    
+}
+
+.body .posts ul li a:hover {
+    
+    /* Text */
+    color:              #3299bb;
+    
+}
