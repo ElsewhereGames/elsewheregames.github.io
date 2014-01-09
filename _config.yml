@@ -1,3 +1,4 @@
 name: Elsewhere Games
 markdown: redcarpet
 pygments: true
+permalink: /:categories/:title.html
