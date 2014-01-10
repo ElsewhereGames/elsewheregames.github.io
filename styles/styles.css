@@ -34,15 +34,14 @@ html, body {
 
 /* Header */
 
-.body .header {
-    
-    /* Size & Location */
-    
+.body .header a {
+        
     /* Text */
     font-family:        'Fjalla One';
     font-size:          80px;
     color:              #bcbcbc;
     letter-spacing:     2px;   
+    text-decoration:    none;
     
 }
 
