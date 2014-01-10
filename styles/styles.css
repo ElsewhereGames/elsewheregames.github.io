@@ -86,7 +86,7 @@ html, body {
 /* Content */
 
 .body .content {
-    padding:            30px;
+    padding:            0px 30px;
 }
 
 .body .content h1,
@@ -138,7 +138,8 @@ html, body {
     /* Background */ 
     display:            block;
     background-color:   #bcbcbc;
-    padding:            10px 5px;
+    padding:            10px 30px;
+    margin:             0px -30px;
     
     /* Text */
     font-size:          25px;
@@ -158,6 +159,5 @@ html, body {
 .body .posts ul li p {
 
     /* Text */
-    font-size:          100%;
 
 }
