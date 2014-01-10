@@ -130,13 +130,16 @@ html, body {
 }
 
 .body .posts ul li {
-    margin:             10px 0px;
-    padding:            10px 5px;
-    background-color:   #bcbcbc;
+    margin-bottom:      30px;
 }
 
 .body .posts ul li a {
+
+    /* Background */ 
     display:            block;
+    background-color:   #bcbcbc;
+    padding:            10px 5px;
+    
     /* Text */
     font-size:          25px;
     font-family:        'Fjalla One';
@@ -150,4 +153,11 @@ html, body {
     /* Text */
     color:              #3299bb;
     
+}
+
+.body .posts ul li p {
+
+    /* Text */
+    font-size:          100%;
+
 }
