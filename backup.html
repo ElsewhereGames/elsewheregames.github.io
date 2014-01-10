@@ -3,7 +3,7 @@
 <html>
     <head>
 
-        <title>{{site.name}}</title>
+        <title>{% if page.title %} {{ page.title }} | {% endif %}{{ site.name }}</title>
         
         <link href="http://fonts.googleapis.com/css?family=Fjalla+One|Average+Sans" rel="stylesheet" type="text/css">
         <link rel="stylesheet" type="text/css" href="./styles/styles.css" />
