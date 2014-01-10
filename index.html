@@ -3,4 +3,6 @@ layout: default
 title: Elsewhere Blog
 ---
 
-This is a test of publising the Elsewhere blog using Jekyll.
+{% assign post = site.posts.first %}
+{% assign content = post.content %}
+{% include post.html %}
