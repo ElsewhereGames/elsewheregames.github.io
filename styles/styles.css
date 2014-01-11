@@ -85,7 +85,7 @@ html, body {
 /* Content */
 
 .body .content {
-    padding:            30px;
+    padding:            0px 30px;
 }
 
 .body .content h1,
@@ -131,6 +131,7 @@ html, body {
 
 .body .posts ul li {
     margin-bottom:      30px;
+    position:           relative;
 }
 
 .body .posts ul li a {
@@ -158,8 +159,33 @@ html, body {
     
 }
 
-.body .posts ul li p {
+/* Tags */
 
+.body .posts .tags {
+    position:           absolute;
+    left:               610px;
+    top:                0px;
+}
+
+.body .posts .tags ul {
+    margin:             0px;
+    padding:            0px;
+}
+
+.body .posts .tags ul li {
+
+    /* Spacing */
+    padding:            5px;  
+    margin:             5px 0px;
+    background-color:   #424242;
+    
     /* Text */
+    font-weight:        normal;
+    font-size:          10px;
+    letter-spacing:     2px;
+    
+}
 
+.body .posts .tags ul li {
+    color:              #ff9900; 
 }
