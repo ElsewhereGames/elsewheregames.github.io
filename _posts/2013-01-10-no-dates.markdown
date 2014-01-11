@@ -1,0 +1,33 @@
+---
+layout: post
+title: No Dates!
+tags: [jekyll, gitlab, date-time]
+excerpt: In designing this blog, I decided against prominently displaying dates. Read on to see why I made this decision.
+---
+
+I decided to try out the [Jekyll](http://jekyllrb.com/) static site generator for this blog; [GitLab](http://pages.github.com/) will host the site for you, and all you have to is push Markdown-formatted files to a special repository (provided you don't want to use third-party Jekyll plug-ins). When looking through a few sample sites and tutorials, I noticed that all blogs prominently show a date with their posts.
+ 
+Dating posts may have been useful when diaries were used to keep track of important life-events, but serve no use for technical blogs on the web.
+ 
+## Dates Provide Little Context
+ 
+Software generally does not use dates to differentiate between API or feature set. Instead, it relies on something that can relay much more contextual information, a version number. Provided the right approach to versioning is used, you can tell if a release contains mayor features or just bug fixes.
+
+One thing you can learn from dates with posts is how active the writer is. However, with todays integration of social media, figuring out whether a writer contributes frequently should be easy. Especially when using GitHub pages, the date at which a post was written is pointless if the author can go in and update the post so easily. Unfortunately, Jekyll does not seem to provide a last-edited variable for posts, although you can add your own.
+
+## Dates are Complex
+ 
+There are [many different calendars](http://en.wikipedia.org/wiki/List_of_calendars). Which one should you use? Do you display the full names of months, or just their numerical identifier? Anyone who has ever had code a scheduling system knows that dates are hard to code for. Word has it that Java 8 will finally provide a decent [Date-Time](http://docs.oracle.com/javase/tutorial/datetime/) API.
+
+## The Quest for Perfection
+
+In the end, it came down my desire to remove features until the essence remains. I didn't think dates added anything, so they had to go. I had to make a few changes to the Jekyll configuration to excludes dates from permalinks:
+
+~~~
+permalink: /:categories/:title.html
+~~~
+
+Posts still require a date in the file name, but at least these are not front-facing.
+ 
+ 
+
