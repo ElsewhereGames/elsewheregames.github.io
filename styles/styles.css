@@ -84,7 +84,7 @@ html, body {
 
 /* Content */
 
-.body .content {
+.body .post {
     padding:            0px 30px;
 }
 
@@ -123,18 +123,18 @@ html, body {
 
 /* Post Lists */
 
-.body .posts  ul {
+.body .posts-list ul {
     list-style-type:    none;
     padding:            0px;
     margin:             0px;
 }
 
-.body .posts ul li {
+.body .posts-list ul li {
     margin-bottom:      30px;
     position:           relative;
 }
 
-.body .posts ul li a {
+.body .posts-list ul li a {
 
     /* Background */ 
     display:            block;
@@ -152,7 +152,7 @@ html, body {
     
 }
 
-.body .posts ul li a:hover {
+.body .posts-list ul li a:hover {
     
     /* Text */
     color:              #3299bb;
@@ -161,18 +161,18 @@ html, body {
 
 /* Tags */
 
-.body .posts .tags {
+.body .posts-list .tags {
     position:           absolute;
     left:               610px;
     top:                0px;
 }
 
-.body .posts .tags ul {
+.body .posts-list .tags ul {
     margin:             0px;
     padding:            0px;
 }
 
-.body .posts .tags ul li {
+.body .posts-list .tags ul li {
 
     /* Spacing */
     padding:            5px;  
@@ -186,6 +186,6 @@ html, body {
     
 }
 
-.body .posts .tags ul li {
+.body .posts-list .tags ul li {
     color:              #ff9900; 
 }
