@@ -89,6 +89,7 @@ html, body {
 }
 
 .body .content .post h1,
+.body .content .post-list-item h1,
 .body .content .post h2,
 .body .content .post h3,
 .body .content .post h4,
@@ -102,7 +103,8 @@ html, body {
 
 }
 
-.body .content .post p {
+.body .content .post p,
+.body .content .post-list-item p {
     
     /* Text */
     font-size:          110%;
@@ -130,8 +132,8 @@ html, body {
 }
 
 .body .posts-list ul li {
-    margin-bottom:      30px;
     padding:            30px;
+    padding-bottom:     0px;
     position:           relative;
 }
 
@@ -150,6 +152,7 @@ html, body {
     letter-spacing:     2px;
     color:              #424242;
     font-weight:        normal;
+    text-decoration:    none;
     
 }
 
@@ -164,8 +167,8 @@ html, body {
 
 .body .posts-list .tags {
     position:           absolute;
-    left:               610px;
-    top:                0px;
+    left:               640px;
+    top:                30px;
 }
 
 .body .posts-list .tags ul {
