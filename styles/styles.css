@@ -51,11 +51,32 @@ html, body {
 
     /* Spacing */
     padding:            10px 0px;
-
+    
     /* Background */
     background-color:   #bcbcbc;
     text-align:         right;
 
+}
+
+.body .menu .social-media-badges {
+    
+    /* Positioning */
+    display:            table;
+    width:              100%;
+ 
+}
+
+.body .menu .social-media-badges .social-media-badge {
+
+    /* Positioning */
+    display:            table-cell;
+    vertical-align:     middle;
+    padding:            0px 10px;
+}
+
+.body .menu .social-media-badges .social-media-badge-pad {
+    display:            table-cell;
+    width:              100%;
 }
 
 .body .menu a {
@@ -73,6 +94,10 @@ html, body {
     letter-spacing:     2px;
     transform:          uppercase;
     
+}
+
+.body .menu ul li {
+    float:              left;
 }
 
 .body .menu a:hover {

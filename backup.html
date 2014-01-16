@@ -4,7 +4,7 @@
 <html>
     <head>
 
-        <title> All Posts | Elsewhere Games</title>
+        <title> No Dates! | Elsewhere Games</title>
         
         <link href="http://fonts.googleapis.com/css?family=Fjalla+One|Average+Sans" rel="stylesheet" type="text/css">
         <link rel="stylesheet" type="text/css" href="./styles/styles.css" />
@@ -29,81 +29,83 @@
             
             <div class="content">
             
-                <div class="posts-list">
+                <!-- Post -->
 
-    <ul>
-    
-        
-        
-            <li>
-                <!-- Post -->
-                <div class="post-list-item">
-                    <h1>No Dates!</h1>
-                    <p>In designing this blog, I decided against prominently displaying dates. Read on to see why I made this decision.</p>
-                    <a href="/no-dates.html">Read More</a>
-                    
-                </div>
-                
-                <!-- Tags -->
-                <div class="tags">
-                    <ul>
-                    
-                    
-                    
-                        <li>jekyll</li>
-                        
-                    
-                    
-                        <li>gitlab</li>
-                        
-                    
-                    
-                        <li>date-time</li>
-                        
-                    
-                    
-                    </ul>
-                </div>
-                
-            </li>
-            
-            <li>
-                <!-- Post -->
-                <div class="post-list-item">
-                    <h1>No Dates!</h1>
-                    <p>In designing this blog, I decided against prominently displaying dates. Read on to see why I made this decision.</p>
-                    <a href="/no-dates.html">Read More</a>
-                    
-                </div>
-                
-                <!-- Tags -->
-                <div class="tags">
-                    <ul>
-                    
-                    
-                    
-                        <li>jekyll</li>
-                        
-                    
-                    
-                        <li>gitlab</li>
-                        
-                    
-                    
-                        <li>date-time</li>
-                        
-                    
-                    
-                    </ul>
-                </div>
-                
-            </li>
-            
-        
-        
-    </ul>
+<div class="post">
+
+    <h1>No Dates!</h1>
+
+    <p>I decided to try out the <a href="http://jekyllrb.com/">Jekyll</a> static site generator for this blog; <a href="http://pages.github.com/">GitLab</a> will host the site for you, and all you have to is push Markdown-formatted files to a special repository (provided you don&#39;t want to use third-party Jekyll plug-ins). When looking through a few sample sites and tutorials, I noticed that all blogs prominently show a date with their posts.</p>
+
+<p>Dating posts may have been useful when diaries were used to keep track of important life-events, but serve no use for technical blogs on the web.</p>
+
+<h2>Dates Provide Little Context</h2>
+
+<p>Software generally does not use dates to differentiate between API or feature set. Instead, it relies on something that can relay much more contextual information, a version number. Provided the right approach to versioning is used, you can tell if a release contains mayor features or just bug fixes.</p>
+
+<p>One thing you can learn from dates with posts is how active the writer is. However, with todays integration of social media, figuring out whether a writer contributes frequently should be easy. Especially when using GitHub pages, the date at which a post was written is pointless if the author can go in and update the post so easily. Unfortunately, Jekyll does not seem to provide a last-edited variable for posts, although you can add your own.</p>
+
+<h2>Dates are Complex</h2>
+
+<p>There are <a href="http://en.wikipedia.org/wiki/List_of_calendars">many different calendars</a>. Which one should you use? Do you display the full names of months, or just their numerical identifier? Anyone who has ever had code a scheduling system knows that dates are hard to code for. Word has it that Java 8 will finally provide a decent <a href="http://docs.oracle.com/javase/tutorial/datetime/">Date-Time</a> API.</p>
+
+<h2>The Quest for Perfection</h2>
+
+<p>In the end, it came down my desire to remove features until the essence remains. I didn&#39;t think dates added anything, so they had to go. I had to make a few changes to the Jekyll configuration to excludes dates from permalinks:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">permalink: /:categories/:title.html
+</code></pre></div>
+<p>Posts still require a date in the file name, but at least these are not front-facing.</p>
+
 
 </div>
+
+<!-- Social Media -->
+
+<div class="menu">
+
+    <span class="social-media-badges">
+
+        <span class="social-media-badge-pad">&nbsp;</span>
+    
+        <!-- G+ -->    
+        <span class="social-media-badge">
+            <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+            <g:plusone size="tall"></g:plusone>
+        </span>
+
+        <!-- Reddit -->
+        <span class="social-media-badge">
+            <script type="text/javascript" src="http://www.reddit.com/static/button/button3.js"></script>
+        </span>
+    
+        <!-- Twitter -->
+        <span class="social-media-badge">
+            <a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-count="none">Tweet</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        </span>
+        
+    </span>
+    
+</div>
+
+<!-- Disqus Comments -->
+
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'elsewheregames';
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+
+<div class="comments">
+    <div id="disqus_thread"></div>
+</div>
+
             
             </div>
         
