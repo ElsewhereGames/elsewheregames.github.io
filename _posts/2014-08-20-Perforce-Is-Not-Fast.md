@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 
 My employer uses Perforce for version control. For a tool that costs hundreds of dollars per seat, I am amazed at how much it gets in my way during daily development tasks.  
