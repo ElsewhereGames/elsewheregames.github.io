@@ -23,8 +23,9 @@ In Git, this is a simple, one-step process. In Perforce, each of these steps has
 To interact with Perforce repositories, the primary GUI tool is the [Perforce Visual Client](http://www.perforce.com/product/components/perforce-visual-client). This tool seems to forget my password at random intervals, while I am working inside of it. It will then ask me to enter it three or four times in a row. Perhaps I entered it wrong, but there is no indication that this is the case.
 
 On the IDE integration front, things are even worse. There is a plug-in for Visual Studio called [P4VS](http://www.perforce.com/product/components/visual-studio-plug-in), which lets you see file status and such right in your Solution Explorer. I didn't think it was possible, but I think this plug-in is buggier than Git integration with Eclipse:
- - Every time I open a project, I have to log in to Perforce. If I go into the options to connect to the server automatically, one of settings (usually the name of the workspace) gets mangled and I am presented with a dialog anyway.
- - File status never seems to update automatically. If I submit a file using P4V, the file will remain flagged as having been modified inside of Visual Studio until I force a refresh.
+
+- Every time I open a project, I have to log in to Perforce. If I go into the options to connect to the server automatically, one of settings (usually the name of the workspace) gets mangled and I am presented with a dialog anyway.
+- File status never seems to update automatically. If I submit a file using P4V, the file will remain flagged as having been modified inside of Visual Studio until I force a refresh.
 
 ## I Feel Like I am Taking Crazy Pills
 
