@@ -1,5 +1,10 @@
 ---
 published: true
+layout: post
+tags: 
+  - "c#"
+  - "code-as-a-craft"
+excerpt: "I check `using` directives as an indicator of code quality."
 ---
 
 ## I Don't Trust Your C# Code When...
