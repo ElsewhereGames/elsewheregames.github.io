@@ -10,7 +10,7 @@ title: using only.whats.needed;
 
 When reading someone else's code, I get suspicious when the first set of `using` directives are the defaults:
 
-```
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Linq;
