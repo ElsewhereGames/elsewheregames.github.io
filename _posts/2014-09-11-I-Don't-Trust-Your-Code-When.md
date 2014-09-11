@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 
 ## I Don't Trust Your C# Code When...
