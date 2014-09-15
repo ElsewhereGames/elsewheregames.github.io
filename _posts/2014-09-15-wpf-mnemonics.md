@@ -5,7 +5,7 @@ tags:
   - wpf
   - mnemonics
 excerpt: Underscores in the contents of a label triggers special havior which also influences view hierarchy.
-title: &#95;Mnemonics
+title: 0x95 Mnemonics
 ---
 
 ### Mnemonics is Hard to Type
