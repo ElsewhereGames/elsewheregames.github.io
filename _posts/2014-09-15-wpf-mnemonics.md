@@ -2,15 +2,16 @@
 published: false
 layout: post
 tags: 
-  - "c#"
-  - "code-as-a-craft"
-excerpt: "I check `using` directives as an indicator of code quality."
+  - wpf
+  - mnemonics
+excerpt: Underscores in the contents of a label triggers special havior which also influences view hierarchy.
+title: _Mnemonics
 ---
 
 ### Mnemonics is Hard to Type
 If the content of a [Label](http://msdn.microsoft.com/en-us/library/system.windows.controls.label.aspx) is a string which contains an underscore, the label will become a mnemonic label. Specify a control (e.g. a [TextBox](http://msdn.microsoft.com/en-us/library/system.windows.controls.textbox.aspx)) using the ```Target``` property of the label, and pressing `alt` and the letter which comes after the underscore will give focus to that target control.
 
-For example, if you put the following [XAML](http://msdn.microsoft.com/en-us/library/ms752059.aspx) into a view, and press `alt+u`, the textbox will receive focus and you can type in it.
+For example, if you put the following [XAML](http://msdn.microsoft.com/en-us/library/ms752059.aspx) into a view, and press `alt+u`, the textbox will receive focus.
 
 ```csharp
 <StackPanel>
@@ -30,4 +31,4 @@ Kind of a neat feature, but it became a problem in the code-base I am working in
 
 When a label does *not* have mnemonic content, the ```OriginalSource``` property will be a [TextBlock](http://msdn.microsoft.com/en-us/library/system.windows.controls.textblock.aspx), a [Visual](http://msdn.microsoft.com/en-us/library/system.windows.media.visual.aspx) type. However, in the case of a mnemonic label, ```OriginalSource``` will be a [Run](http://msdn.microsoft.com/en-us/library/system.windows.documents.run.aspx), a non-visual type, and will therefore cause the exception to occur.
 
-I don't think the original developer should have used the ```OriginalSource``` property in the first place, but what's done is done. Our solution was to wrap the label content in a TextBlock, which disables the mnemonic behavior and has the nice side effect of us not having to escape the label's contents. 
+I don't think the original developer should have used the ```OriginalSource``` property in the first place, but what's done is done. Our solution was to wrap the label content in a TextBlock, which disables the mnemonic behavior and has the nice side effect of us not having to escape the label's contents.
