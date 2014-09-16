@@ -13,7 +13,7 @@ If the content of a [Label](http://msdn.microsoft.com/en-us/library/system.windo
 
 For example, if you put the following [XAML](http://msdn.microsoft.com/en-us/library/ms752059.aspx) into a view, and press `alt+u`, the textbox will receive focus.
 
-```csharp
+{% highlight csharp %}
 <StackPanel>
          
     <Label 
@@ -24,7 +24,7 @@ For example, if you put the following [XAML](http://msdn.microsoft.com/en-us/lib
     <TextBox Name="TestTextBox" />
         
 </StackPanel>
-```
+{% endhighlight %}
 
 ### It's No Longer Turtles All the Way Down
 Kind of a neat feature, but it became a problem in the code-base I am working in; There is a section of the view code which searches up the view hierarchy to find out if a an element is part of a list or not. This (legacy) code looks at the ```OriginalSource``` property of the mouse event and calls ```VisualTree.GetParent``` until it either finds a row view (indicating the item is in that list) or null. If you check the documentation for [GetParent](http://msdn.microsoft.com/en-us/library/system.windows.media.visualtreehelper.getparent.aspx), you will see that the remarks say that the dependency object you provide `can represent either a Visual or Visual3D object.` The thing is, unless it is either of those types, this operation will throw an [InvalidOperationException](http://msdn.microsoft.com/en-us/library/system.invalidoperationexception.aspx)!
