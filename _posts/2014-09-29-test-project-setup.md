@@ -4,4 +4,10 @@ published: false
 
 ## Testing
 
-While I am not wholly convinced of the usefulness of test-driven development, I do think there are many reasons to have a suite of tests which cover a large portion of a code-base. Now, ensuring the code-base has fewer bugs is nice (and what should be argument for selling automated testing to upper management) but this is only a side effect. The main purpose for automated testing are
+Before I cover how I usually set up my test projects, I want to provide some background on where I see automated testing being useful to help explain my approach.
+
+Ensuring a code-base can be quickly validated to perform certain functions and features base on a set of automated tests is nice, but is not where the main pay-off comes from. A good suite of tests:
+
+- Provides an overview of the code base
+- Allows a developer to quickly diagnose and address bugs
+- Enforces modularity of the code base
