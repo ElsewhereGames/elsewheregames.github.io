@@ -1,5 +1,11 @@
 ---
 published: false
+layout: post
+title: Test Project Organization
+tags: 
+  - unit testing
+  - project
+excerpt: How and why you should organize your test projects.
 ---
 
 ## Testing is Secondary
