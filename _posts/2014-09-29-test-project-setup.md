@@ -3,7 +3,7 @@ published: true
 layout: post
 title: Test Project Organization
 tags: 
-  - unit testing
+  - unittesting
   - project
 excerpt: How and why you should organize your test projects.
 ---
